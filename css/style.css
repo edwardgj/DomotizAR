@@ -1,0 +1,162 @@
+body {
+    padding-top: 58px;
+    /* Adjust if your navbar height is different */
+}
+
+
+.dark-overlay {
+    position: relative;
+    background-image: url('../img/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 58px);
+    /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+}
+
+.dark-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* Adjust the opacity to darken */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+
+    /* Bootstrap large (lg) breakpoint */
+    .content h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Bootstrap medium (md) breakpoint */
+    .content h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Bootstrap small (sm) breakpoint */
+    .content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/* fixed scroll up btn */
+
+#scrollBtn {
+    display: none;
+    /* Hidden by default */
+}
+
+#scrollBtn i {
+    color: #6c757d;
+    /* Set icon color to white */
+}
+
+/* Footer */
+
+.footer-separator::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 1.5rem;
+    /* Adjust height as needed */
+    background-color: white;
+    /* Or any color you prefer */
+}
+
+.footer-separator:last-child::after {
+    display: none;
+    /* Hide the separator for the last item */
+}
+
+@media (max-width: 576px) {
+
+    /* Bootstrap small breakpoint */
+    .footer-separator::after {
+        display: none;
+        /* Hide separators on small screens */
+    }
+}
+
+/* Domotica section img smaller */
+
+.custom-img-size {
+    max-width: 80%;
+    /* Adjust the percentage as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+
+/* navbar dropdown */
+
+.nav-item.d-flex .dropdown {
+    margin-left: 0.5rem;
+    /* Adjust space between Proyectos link and dropdown */
+}
+
+.dropdown-toggle::after {
+    font-size: 1.25em;
+    /* Increase the font size */
+}
+
+/* Nube img size*/
+
+.nube-custom-size {
+    max-width: 40%;
+    /* Adjust the percentage as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Video container */
+
+.custom-video-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    position: relative;
+}
+
+.custom-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

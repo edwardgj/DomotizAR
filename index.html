@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>DomotizAR</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand h1">Domotiz<span class="text-info">AR</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#domotica" class="nav-link">Domótica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#matter" class="nav-link">Protocolo Matter</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a href="#proyectos" class="nav-link">Proyectos</a>
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="proyectosDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"></a>
+                            <ul class="dropdown-menu" aria-labelledby="proyectosDropdown">
+                                <li><a href="nube.html" class="dropdown-item">Nube de Palabras</a></li>
+                                <li><a href="infografia.html" class="dropdown-item">Infografía</a></li>
+                                <li><a href="podcast.html" class="dropdown-item">Podcast</a></li>
+                                <li><a href="revista.html" class="dropdown-item">Revista Digital</a></li>
+                                <li><a href="animacion.html" class="dropdown-item">Animación Digital</a></li>
+                                <li><a href="video.html" class="dropdown-item">Video por Streaming</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a href="nosotros.html" class="nav-link">Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- portada -->
+    <section class="text-light text-center dark-overlay">
+        <div class="content container">
+            <h1>Domotiz<span class="text-info">AR</span></h1>
+            <p class="lead pt-2">Domótica al alcance de todos. Aprende cómo transformar tu hogar en un espacio
+                inteligente con nuestros proyectos.</p>
+        </div>
+    </section>
+
+    <!-- domotica sección -->
+    <section id="domotica" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/domotica.png" class="img-fluid custom-img-size" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Domótica</h2>
+                    <p class="lead">La domótica ha transformado nuestros hogares en espacios inteligentes y eficientes,
+                        permitiendo automatizar y controlar iluminación, climatización, seguridad y electrodomésticos
+                        desde una interfaz única. Esto no solo mejora la comodidad y el confort, sino que también
+                        optimiza el uso de la energía, haciendo el hogar más sostenible y eficiente. Gracias a estos
+                        avances, convertir tu hogar en un lugar inteligente y seguro está más al alcance que nunca.</p>
+                    <a href="domotica.html" class="btn btn-light mt-3 border border-dark"> <i
+                            class="bi bi-chevron-right"></i> Más
+                        información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- matter sección -->
+    <section id="matter" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/matter-white.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Protocolo Matter</h2>
+                    <p class="lead">El Protocolo Matter es un estándar de conectividad de código abierto diseñado para
+                        mejorar la interoperabilidad entre dispositivos de un hogar inteligente. Este protocolo facilita
+                        la comunicación segura y eficiente entre distintos dispositivos, independientemente de su
+                        fabricante, garantizando una experiencia integrada y sin complicaciones para los usuarios.</p>
+                    <a href="matter.html" class="btn btn-light mt-3"> <i class="bi bi-chevron-right"></i> Más
+                        información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- proyectos -->
+    <section id="proyectos" class="p-5">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col">
+                    <h2 class="text-center py-3">Proyectos</h2>
+                    <p class="lead">Explora nuestros proyectos para conocer e informarte más sobre la domótica!</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card bg-dark text-light h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-cloud"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Nube de Palabras</h3>
+                            <p class="card-text flex-grow-1">Palabras claves sobre la domótica y la automatización del
+                                hogar!</p>
+                            <a href="nube.html" class="btn btn-light mt-auto">Ir a la página</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card bg-secondary text-light h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-info-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Infografía</h3>
+                            <p class="card-text flex-grow-1">Infografía digital sobre la automatización del hogar.</p>
+                            <a href="infografia.html" class="btn btn-dark mt-auto">Ir a la página</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card bg-dark text-light h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-mic-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Podcast</h3>
+                            <p class="card-text flex-grow-1">Podcast "Domótica para una vida inteligente"</p>
+                            <a href="podcast.html" class="btn btn-light mt-auto">Ir a la página</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card bg-secondary text-light h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-book-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Revista Digital</h3>
+                            <p class="card-text flex-grow-1">Revista digital online sobre reseñas domóticas.</p>
+                            <a href="revista.html" class="btn btn-dark mt-auto">Ir a la página</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card bg-dark text-light h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-film"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Animación Digital</h3>
+                            <p class="card-text flex-grow-1">Animación digital que informa e introduce brevemente la
+                                domótica.</p>
+                            <a href="animacion.html" class="btn btn-light mt-auto">Ir a la página</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card bg-secondary text-light h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-camera-reels-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Video por Streaming</h3>
+                            <p class="card-text flex-grow-1">Streaming donde se explica la importancia de la domótica
+                                con sus ventajas y posibilidades.</p>
+                            <a href="video.html" class="btn btn-dark mt-auto">Ir a la página</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="lead d-flex flex-column flex-sm-row justify-content-center align-items-center text-center">
+                <img class="px-2" src="./img/logo.png" alt="">
+                <span class="px-2 position-relative footer-separator">ISFT N°190</span>
+                <span class="px-2 position-relative footer-separator">Prácticas Profesionalizantes II</span>
+                <span class="px-2 position-relative footer-separator">Trabajo Práctico Sitio WEB</span>
+            </p>
+        </div>
+    </footer>
+
+
+    </footer>
+
+    <!-- Fixed btn -->
+    <button id="scrollBtn" class="btn position-fixed bottom-0 end-0 m-3"><i
+            class="bi bi-arrow-up-square-fill h1"></i></button>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
